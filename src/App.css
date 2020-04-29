@@ -18,3 +18,6 @@ body{
   background-color: #120321;
   /* border: 2px solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
