@@ -1,12 +1,13 @@
 .heading{
-    font-size: 42px;
-    text-align: center;
+    font-size: 60px;
+    margin: auto;
     margin-top: 5vh;
     /* text-decoration: underline; */
 }
 
 .container{
     text-align: center;
+    position: relative;
 }
 
 .description{
@@ -18,23 +19,57 @@
 .margin-above{
     margin-top: 20vh;
     transition-duration: 200ms;
-    text-align: left;
     padding: 20px;
 }
 
 .card{
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
+    padding: 10px;
+    background-color: #19443c;
     margin: auto;
     margin-top: 10px;
     transform: scale(0,0);
     opacity: 0;
+    max-width:30%;
+    margin-top: 3vh;
+    border-radius: 10px;
+    min-width: fit-content;
+    border: 1px solid black;
+}
+
+.card-icon{
+    font-size: 38px;
 }
 .card:hover{
     transform: scale(1.5,1.5);
 }
+.card-heading{
+    font-size: 30px;
+}
 .grid{
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(3,auto);
+    position: relative;
+}
+
+@media screen and (max-width:600px){
+    .grid{
+        grid-template-columns: repeat(2,auto);
+    }
+    .card{
+        max-width: 40%;
+    }
+
+    .margin-above{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .grid{
+        display: block;
+    }
+    .card{
+        max-width: 100%;
+        margin: 10px;
+    }
 }

@@ -1,46 +1,57 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './About.css';
 import { TimelineLite, Power2,TweenMax } from "gsap";
-import CSSRulePlugin from "gsap/CSSRulePlugin";
+import {GiSuitcase, GiAchievement} from 'react-icons/gi';
 const About = () => {
     let description = useRef(null);
     let experiance = useRef(null);
+    let achievement = useRef(null);
+    let about = useRef(null);
     let timeLine = new TimelineLite();
-    let cardRef = useRef([]);
+    let cardRef = useRef({'experiance':[],'achievement':[]});
+    const [hovered,setHovered] = useState([]);
+    
     let cards = [
         1,2,3,4,5
     ];
     useEffect(()=>{
         // timeLine.from(description,1,{x:-100,ease:Power2.easeInOut});
         animate();
-        setTimeout(()=>animateDescription(),200);
+        // setTimeout(()=>animateDescription(),200);
 
     },[])
 
     const animate = () => {
-        timeLine.from(description,1,{x:-100,scale:1.6,opacity:0,ease:Power2.easeInOut});
+        timeLine.from(about,1,{y:-200,opacity:0,ease:Power2.easeInOut})
+                .from(description,1,{x:-100,scale:1.6,opacity:0,ease:Power2.easeInOut});
         
 
     }
-    const animateDescription = async () => {
-        await timeLine.to(experiance,0.5,{css:{'margin-top':'5vh'},ease:Power2.easeOut});
-        TweenMax.staggerTo(cardRef.current, 1, {
+    const animateHeading = async (heading,field) => {
+
+        if(hovered.includes(field)){
+            return;
+        }
+
+        setHovered([...hovered,field]);
+        await timeLine.to(heading,0.5,{css:{'margin-top':'5vh','font-size':'42px',"width":'fit-content','border':"2px solid white"},ease:Power2.easeOut})
+        TweenMax.staggerTo(cardRef.current[field], 1, {
             scale: 1,
             opacity:1
           }, 0.3);
     }
 
-    const big = (index) => {
-        timeLine.to(cardRef.current[index],0.1,{scale:1.3,ease:Power2.easeInOut});
+    const big = (index,heading) => {
+        timeLine.to(cardRef.current[heading][index],0.1,{scale:1.1,ease:Power2.easeInOut});
     }
 
-    const normal = (index) => {
-        timeLine.to(cardRef.current[index],0.1,{scale:1,ease:Power2.easeInOut});
+    const normal = (index,heading) => {
+        timeLine.to(cardRef.current[heading][index],0.1,{scale:1,ease:Power2.easeInOut});
     }
 
     return (
-        <div className="about">
-            <div className="container">
+        <div className="about" ref={(el) => {about = el}}>
+            <div className="container" >
             <div className="heading">
                 About
             </div>
@@ -51,14 +62,43 @@ const About = () => {
             </div>
             </div>
             <div className="container">
-            <div className="heading margin-above" ref={(el) => {experiance = el}} onClick={() => animateDescription()}>
+            <div className="heading margin-above" ref={(el) => {experiance = el}} onMouseEnter={() => animateHeading(experiance,'experiance')}>
                 Experiance
             </div>
-            <div className="container-content grid">
+            <div className="container-content grid" ref={el => {cardRef.current.experianceGrid = el}}>
                 {cards.map((card,index) => {
                     return(
-                        <div key={card} ref={el => {cardRef.current[index]=el}} className="card" onMouseEnter={()=>big(index)} onMouseLeave={()=>normal(index)}>
+                        <div key={card} ref={el => {cardRef.current.experiance[index]=el}} className="card" onMouseEnter={()=>big(index,'experiance')} onMouseLeave={()=>normal(index,'experiance')}>
+                            <div>
+                            <div className="card-icon">
+                                <GiSuitcase/>
+                            </div>
+                            <div className="card-heading">Chitkara University</div>
+                            <div className="card-designation">ABC POSITION</div>
+                            <div className="card-time">TIME</div>
+                            </div>
+                        </div>
 
+                    )
+                })}
+            </div>
+            </div>
+            <div className="container">
+            <div className="heading margin-above" ref={(el) => {achievement = el}} onMouseEnter={() => animateHeading(achievement,'achievement')}>
+                Achievements
+            </div>
+            <div className="container-content grid" ref={el => {cardRef.current.achievementGrid = el}}>
+                {cards.map((card,index) => {
+                    return(
+                        <div key={card} ref={el => {cardRef.current.achievement[index]=el}} className="card" onMouseEnter={()=>big(index,'achievement')} onMouseLeave={()=>normal(index,'achievement')}>
+                            <div>
+                            <div className="card-icon">
+                                <GiAchievement/>
+                            </div>
+                            <div className="card-heading">Chitkara University</div>
+                            <div className="card-designation">ABC POSITION</div>
+                            <div className="card-time">TIME</div>
+                            </div>
                         </div>
 
                     )
