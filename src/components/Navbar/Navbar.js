@@ -5,6 +5,7 @@ import {TweenMax,Power3} from 'gsap';
 import Home from '../Home/Home';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import About from '../About/About';
+import Skills from '../Skills/Skills';
 const Navbar = () => {
     let history = useHistory();
     let tilt = useRef(null);
@@ -51,7 +52,7 @@ const Navbar = () => {
                 <div className="content-nav">
                     <div className="nav-option" onClick={()=> {history.push('/');toggle()}}>home</div>
                     <div className="nav-option" onClick={()=> {history.push('/about');toggle()}}>About</div>
-                    <div className="nav-option"> Skills</div>
+                    <div className="nav-option" onClick={() => {history.push('/skills');toggle()}}> Skills</div>
                     <div className="nav-option">projects</div>
                     <div className="nav-option">contact</div>
                 </div>
@@ -61,6 +62,7 @@ const Navbar = () => {
                 <Switch>
                <Route exact path="/" component={Home}/>
                <Route exact path="/about" component={About}/>
+               <Route exact path="/skills" component={Skills}/>
                 </Switch>
                </div>
         </div>
