@@ -1,5 +1,5 @@
 export const parrallax = {
-    'backgroundImage':"linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('https://picsum.photos/800')",
+    'backgroundImage':"linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('https://picsum.photos/800')",
     'backgroundAttachment': 'fixed',
   'backgroundPosition': 'center',
   'backgroundRepeat': 'no-repeat',

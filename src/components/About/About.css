@@ -2,6 +2,8 @@
     font-size: 60px;
     margin: auto;
     margin-top: 5vh;
+    text-transform: capitalize;
+    text-align: center;
     /* text-decoration: underline; */
 }
 
@@ -23,6 +25,7 @@
 }
 
 .card{
+    text-align: center;
     padding: 10px;
     background-color: #19443c;
     margin: auto;
@@ -38,9 +41,6 @@
 
 .card-icon{
     font-size: 38px;
-}
-.card:hover{
-    transform: scale(1.5,1.5);
 }
 .card-heading{
     font-size: 30px;

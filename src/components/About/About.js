@@ -14,10 +14,20 @@ const About = () => {
     let cards = [
         1,2,3,4,5
     ];
+    const createObserver = (reference,field) =>{
+        let observe = new IntersectionObserver((obj)=>{
+
+            if(obj[0].intersectionRatio > 0){
+            animateHeading(reference,field);}
+
+        })
+        observe.observe(reference);
+    }
+
     useEffect(()=>{
-        // timeLine.from(description,1,{x:-100,ease:Power2.easeInOut});
         animate();
-        // setTimeout(()=>animateDescription(),200);
+        createObserver(experiance,'experiance');
+        createObserver(achievement,'achievement');
 
     },[])
 
@@ -62,7 +72,7 @@ const About = () => {
             </div>
             </div>
             <div className="container">
-            <div className="heading margin-above" ref={(el) => {experiance = el}} onMouseEnter={() => animateHeading(experiance,'experiance')}>
+            <div className="heading margin-above" id="experiance" ref={(el) => {experiance = el}} onMouseEnter={() => animateHeading(experiance,'experiance')}>
                 Experiance
             </div>
             <div className="container-content grid" ref={el => {cardRef.current.experianceGrid = el}}>
