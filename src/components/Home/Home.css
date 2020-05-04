@@ -9,6 +9,12 @@
     
 }
 
+.image-loading{
+position: absolute;
+left: 30vw;
+top:30vh;
+font-size: 42px;
+}
 
 .home-name{
 font-size: 4em;

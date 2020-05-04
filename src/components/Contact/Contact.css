@@ -1,0 +1,82 @@
+.facebook{
+    background-color: #3b5998;
+}
+
+.github{
+    background-color:#211F1F;
+}
+
+.linkedin{
+    background-color: #0e76a8;
+}
+
+.instagram{
+    background-color: #f2003c;
+}
+
+.snapchat{
+    background-color: #FFFC00;
+    color: black;
+}
+
+.twitter{
+    background-color: #1DA1F2;
+}
+
+.email{
+    background-color: #0e76a8;
+}
+.contact-heading{
+    margin-top: 0;
+    height: 50vh;
+}
+.head{
+    display: block;
+    /* margin-top: 20vh; */
+    padding-top: 30vh;
+}
+.phone-tile{
+    background-color: white;
+    color: black;
+    max-width: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+.contact{
+    min-height: 100vh;
+}
+
+.content-contact{
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.contact-tile{
+    max-width: fit-content;
+    margin: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+.phone{
+    flex: 1;
+}
+
+.social{
+    flex: 1;
+    display: flex;
+    height:40vh;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:600px){
+    .social{
+        display: block;
+        height: auto;
+    }
+    .head{
+        padding-top: 15vh;
+    }
+}

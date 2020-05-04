@@ -28,15 +28,29 @@
     text-align: center;
     padding: 10px;
     background-color: #19443c;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 10px;
     transform: scale(0,0);
     opacity: 0;
-    max-width:30%;
+    /* width:100%; */
     margin-top: 3vh;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     min-width: fit-content;
     border: 1px solid black;
+}
+
+.url{
+background-color: #148f87;
+max-width: fit-content;
+margin: auto;
+padding: 8px;
+border-radius: 10px;
+cursor: pointer;
+transition-duration: 200ms;
+}
+
+.url:hover{
+    background-color: #2192cb;
 }
 
 .card-icon{
@@ -47,17 +61,15 @@
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3,33%);
     position: relative;
 }
 
 @media screen and (max-width:600px){
     .grid{
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2,50%);
     }
-    .card{
-        max-width: 40%;
-    }
+    
 
     .margin-above{
         padding: 10px;
@@ -68,8 +80,5 @@
     .grid{
         display: block;
     }
-    .card{
-        max-width: 100%;
-        margin: 10px;
-    }
+    
 }

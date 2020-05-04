@@ -1,0 +1,85 @@
+.proj-card{
+background-color: #002147;
+text-align: center;
+margin: auto;
+margin-top: 2vh;
+/* max-width: fit-content; */
+text-transform: capitalize;
+padding: 10px;
+border-radius: 10px;
+max-width: 30vw;
+opacity: 0;
+}
+
+.proj-name{
+    text-transform: uppercase;
+}
+
+.project-grid{
+    display: flex;
+    width: 100%;
+}
+.project-list{
+    
+    flex: 1;
+    height: 80vh;
+    overflow: scroll;
+    cursor: pointer;
+}
+
+.project-detail{
+   
+    padding: 10px;
+    flex: 0;
+    max-height: 80vh;
+    overflow: scroll;
+    text-align: center;
+    margin: 0 auto;
+}
+.project-data{
+    transform: scale(0,0);
+    background-color: #342e2e;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+}
+.projects{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+}
+
+.project-name{
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #002147;
+    max-width: fit-content;
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 3vh;
+    border-radius: 2px;
+
+}
+
+.project-description{
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.selected-color{
+background-color: #3973cc;
+}
+.heading{
+    text-transform: uppercase;
+}
+
+@media  screen and (max-width:600px){
+    .proj-name{
+        font-size: 14px;
+        margin: 0;
+        
+    }
+    .proj-card{
+        padding:5px 0;
+    }
+}

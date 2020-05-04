@@ -1,0 +1,206 @@
+{
+    "social": {
+        "facebook": "https://www.facebook.com/saurav.aggarwal.77",
+        "github": "https://github.com/saurav0705",
+        "linkedin": "https://www.linkedin.com/in/saurav-aggarwal-6a6065153/",
+        "instagram": "https://www.instagram.com/unreadable_saurav/",
+        "snapchat": "https://www.snapchat.com/add/iceman_saurav",
+        "twitter": "https://twitter.com/Agg10Saurav?s=09"
+    },
+    "name": "Saurav Aggarwal",
+    "imageUrl": "https://lh3.googleusercontent.com/a-/AOh14GjgL5lMM6bHNaF5ybBHk-CzSnKNk4FMN3tZmfLlQg=s96-c",
+    "displayImage": "https://drive.google.com/uc?id=1wNqkZ61_X1qHqaYQvglsNzQVs4qDbEq7",
+    "email": "aggarwalsaurav98@gmail.com",
+    "description": "I am passionate web developer always looking fore new challenges and problems to find solution for them.I love to solve puzzles, reading about human psychology and human anatomy. ",
+    "tagline": "Web Developer",
+    "contact": [
+        8901079455
+    ],
+    "education": [
+        {
+            "_id": "5ea011f42176970017288371",
+            "name": "Chitkara University",
+            "designation": "Computer Science",
+            "start": "2016-08-05T18:30:00.000Z",
+            "end": "2020-04-21T18:30:00.000Z",
+            "ongoing": false,
+            "createdAt": "2020-04-22T09:44:20.456Z",
+            "updatedAt": "2020-04-22T13:21:28.916Z",
+            "__v": 0
+        }
+    ],
+    "experiance": [
+        {
+            "_id": "5e9316de545b13755c7d1318",
+            "name": "Calsoft",
+            "designation": "Software Developer Intern",
+            "start": "2019-05-12T18:30:00.000Z",
+            "end": null,
+            "ongoing": true,
+            "createdAt": "2020-04-12T13:25:50.908Z",
+            "updatedAt": "2020-04-22T13:10:56.570Z",
+            "__v": 0
+        }
+    ],
+    "projects": [
+        {
+            "_id": "5ea00eaf217697001728836a",
+            "name": "Question Stack",
+            "description": "An effort to replicate stackoverflow with complete integration with backend and db with nextjs , tailwindcss , express and mongo db",
+            "start": "2020-01-07T18:30:00.000Z",
+            "end": "2020-01-17T18:30:00.000Z",
+            "ongoing": false,
+            "url": "https://questionstack.netlify.app/",
+            "createdAt": "2020-04-22T09:30:23.110Z",
+            "updatedAt": "2020-04-22T09:30:23.110Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ea00efa217697001728836b",
+            "name": "Chat Onn",
+            "description": "a chat based application made with socket io with fronend in react and backend in nodejs.",
+            "start": "2020-03-19T18:30:00.000Z",
+            "end": "2020-03-23T18:30:00.000Z",
+            "ongoing": false,
+            "url": "https://chatonn.netlify.app/",
+            "createdAt": "2020-04-22T09:31:38.086Z",
+            "updatedAt": "2020-04-22T09:31:38.086Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ea00f58217697001728836c",
+            "name": "Color Pallete",
+            "description": "an utility app which gives you random color to which you can save and use for every kind.",
+            "start": "2020-03-25T18:30:00.000Z",
+            "end": "2020-03-27T18:30:00.000Z",
+            "ongoing": false,
+            "url": "https://pallete.netlify.app/",
+            "createdAt": "2020-04-22T09:33:12.110Z",
+            "updatedAt": "2020-04-22T09:33:12.110Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ea00fbd217697001728836d",
+            "name": "Foodie Hai Hum",
+            "description": "a react app which gives you delicious recipe to which you search for it's utilizing foodman api",
+            "start": "2020-01-17T18:30:00.000Z",
+            "end": "2020-01-23T18:30:00.000Z",
+            "ongoing": false,
+            "url": "https://foodiehaihum.netlify.app/",
+            "createdAt": "2020-04-22T09:34:53.753Z",
+            "updatedAt": "2020-04-22T09:34:53.753Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ea0106f217697001728836e",
+            "name": "Finding Falcon",
+            "description": "it was a gmae that made because of a ui challenge i found on geektrust the ui is in react and it uses geektrust provided api's",
+            "start": "2020-03-28T18:30:00.000Z",
+            "end": "2020-03-28T18:30:00.000Z",
+            "ongoing": false,
+            "url": "https://finding-falcon.netlify.app/",
+            "createdAt": "2020-04-22T09:37:51.049Z",
+            "updatedAt": "2020-04-22T09:37:51.049Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ea010dd217697001728836f",
+            "name": "visual covid tracker",
+            "description": "a tracker made for visulaizing covid which free api to fetch data.",
+            "start": "2020-03-30T18:30:00.000Z",
+            "end": "2020-04-01T18:30:00.000Z",
+            "ongoing": false,
+            "url": "https://visual-covid-19.netlify.app/",
+            "createdAt": "2020-04-22T09:39:41.300Z",
+            "updatedAt": "2020-04-22T09:39:41.300Z",
+            "__v": 0
+        },
+        {
+            "_id": "5ea011322176970017288370",
+            "name": "Portfolio Maker",
+            "description": "a website that provides you to get you your own portfolio webiste within a fraction of your time with ability to chnage themes.",
+            "start": "2020-03-31T18:30:00.000Z",
+            "end": null,
+            "ongoing": true,
+            "url": "https://portfolio-maker.netlify.app/",
+            "createdAt": "2020-04-22T09:41:06.983Z",
+            "updatedAt": "2020-04-22T09:41:06.983Z",
+            "__v": 0
+        }
+    ],
+    "skills": [
+        "python",
+        "nodejs",
+        "reactjs",
+        "angular",
+        "data structures",
+        "mongodb",
+        "django",
+        "nextjs",
+        "bootstrap",
+        "html",
+        "css",
+        "javascript"
+    ],
+    "hobbies": [
+        "rubiks cube",
+        "psychology",
+        "physiology",
+        "puzzles"
+    ],
+    "achievements": [
+        {
+            "url": "https://www.coursera.org/account/accomplishments/verify/M8ZK3GDBCK4D",
+            "_id": "5ea012562176970017288372",
+            "title": "NodeJs",
+            "createdAt": "2020-04-22T09:45:58.127Z",
+            "updatedAt": "2020-04-22T09:45:58.127Z",
+            "__v": 0
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/verify/M8ZK3GDBCK4D",
+            "_id": "5ea0126e2176970017288373",
+            "title": "Angular",
+            "createdAt": "2020-04-22T09:46:22.039Z",
+            "updatedAt": "2020-04-22T09:46:22.039Z",
+            "__v": 0
+        },
+        {
+            "url": "https://www.freecodecamp.org/certification/saurav_aggarwal/javascript-algorithms",
+            "_id": "5ea012ca2176970017288374",
+            "title": "Javascript",
+            "createdAt": "2020-04-22T09:47:54.492Z",
+            "updatedAt": "2020-04-22T09:47:54.492Z",
+            "__v": 0
+        },
+        {
+            "url": "https://www.freecodecamp.org/certification/saurav_aggarwal/responsive-web-design",
+            "_id": "5ea012ed2176970017288375",
+            "title": "Responsive Web Design",
+            "createdAt": "2020-04-22T09:48:29.582Z",
+            "updatedAt": "2020-04-22T09:48:29.582Z",
+            "__v": 0
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/verify/PPY4PFZL5ZYK",
+            "_id": "5ea013132176970017288376",
+            "title": "Science of Exercise",
+            "createdAt": "2020-04-22T09:49:07.767Z",
+            "updatedAt": "2020-04-22T09:49:07.767Z",
+            "__v": 0
+        },
+        {
+            "url": "https://www.coursera.org/account/accomplishments/records/BNPGPTNM7N7C",
+            "_id": "5ea6bf11c7e4250017471046",
+            "title": "ReactJS",
+            "createdAt": "2020-04-27T11:16:33.693Z",
+            "updatedAt": "2020-04-27T11:16:33.693Z",
+            "__v": 0
+        }
+    ],
+    "portfolio_url": "",
+    "username": "aggarwalsaurav98@gmail.com",
+    "createdAt": "2020-04-09T11:33:15.418Z",
+    "updatedAt": "2020-04-27T11:16:33.723Z",
+    "__v": 82
+}

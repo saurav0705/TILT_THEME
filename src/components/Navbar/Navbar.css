@@ -11,13 +11,16 @@
     overflow-y: hidden;
     z-index: 0;
 }
-
+.highlight{
+    font-size: 30px;
+    color: yellow;
+}
 .content{
     /* opacity: 0; */
     position: absolute;
     top:0;
     margin: 0;
-    background-color: black;
+    background-color: #020403;
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -27,6 +30,8 @@
     transform-origin: top left;
     transform-style: preserve-3D;
 }
+
+
 
 .rotate{
     transform: rotate(-20deg);
@@ -46,6 +51,7 @@
     position: fixed;
     bottom:10vh;
     color: white;
+    cursor: pointer;
 }
 .nav-option{
 text-transform: uppercase;

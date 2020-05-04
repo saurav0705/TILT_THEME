@@ -1,0 +1,18 @@
+.loading-precentage{
+    color:white;
+    text-align: center;
+    font-size: 34px;
+    
+}
+
+.loading-bar{
+    background-image: linear-gradient(to right,#c6ffdd,#fbd786,#f7797d);
+    height: 10px;
+}
+
+.loading-data{
+    position: fixed;
+    top:40vh;
+    text-align: center;
+    width: 100%;
+}

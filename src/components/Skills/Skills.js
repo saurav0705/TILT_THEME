@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './Skills.css';
 import {GiSuitcase} from 'react-icons/gi';
-import { TimelineLite, Power2,TweenMax } from "gsap";
-import {parrallax} from '../effects';
-const Skills = () => {
+import { TimelineLite, Power2} from "gsap";
+import {getFormatedDate} from '../effects';
+const Skills = (props) => {
     let skill=['abc','abc1','abc2','abc3','abc4','abc5'];
     let skillRef = useRef(null);
     let educationRef = useRef(null);
@@ -38,7 +38,7 @@ const Skills = () => {
 
         setHovered([...hovered,field]);
         await timeLine.to(heading,0.5,{css:{'margin-top':'5vh','font-size':'42px',"padding":"10px","width":'fit-content'},ease:Power2.easeOut})
-                        .staggerTo(childRef.current[field], 1, {
+                        .staggerTo(childRef.current[field], 0.5, {
             scale: 1,
             opacity:1
           }, 0.3);
@@ -53,7 +53,7 @@ const Skills = () => {
                     SKills
                 </div>
                 <div className="container-content">
-                    {skill.map((sk,index) => {return(
+                    {props.skills.map((sk,index) => {return(
                         <div key={sk+"il"} className="tile" ref={el => {childRef.current.skill[index] = el}}>{sk}</div>
                     )})}
                 </div>
@@ -63,7 +63,7 @@ const Skills = () => {
                     hobbies
                 </div>
                 <div className="container-content">
-                    {skill.map((sk,index) => {return(
+                    {props.hobbies.map((sk,index) => {return(
                         <div key={sk+"hb"} className="tile" ref={el => {childRef.current.hobbies[index] = el}}>{sk}</div>
                     )})}
                 </div>
@@ -75,15 +75,15 @@ const Skills = () => {
                     Education
                 </div>
                 <div className="container-content grid">
-                    {skill.map((sk,index) => {return(
+                    {props.education.map((sk,index) => {return(
                          <div key={sk+"exp"}  className="card opacity-1" ref={el => {childRef.current.education[index] = el}}>
                          <div>
                          <div className="card-icon">
                              <GiSuitcase/>
                          </div>
-                         <div className="card-heading">Chitkara University</div>
-                         <div className="card-designation">ABC POSITION</div>
-                         <div className="card-time">TIME</div>
+                         <div className="card-heading">{sk.name}</div>
+                         <div className="card-designation">{sk.designation}</div>
+                        <div className="card-time">{getFormatedDate(sk.start)} - {sk.ongoing ? " PRESENT":getFormatedDate(sk.end)}</div>
                          </div>
                      </div>
                     )})}
